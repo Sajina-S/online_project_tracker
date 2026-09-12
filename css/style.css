@@ -18,17 +18,17 @@ html {
 
 /* ── Tokens ───────────────────────────────── */
 :root {
-  --primary: #006d77;
-  --primary-d: #004b5a;
-  --secondary: #83c5be;
-  --accent: #ffdd57;
-  --bg: #edf6f9;
+  --primary: #0066cc;
+  --primary-d: #003d99;
+  --secondary: #6699ff;
+  --accent: #ffffff;
+  --bg: #f5f9ff;
   --card: #ffffff;
   --text: #1a1a2e;
-  --muted: #5c7a7f;
+  --muted: #4a7ba7;
   --radius: 10px;
   --radius-lg: 14px;
-  --shadow: 0 4px 18px rgba(0, 109, 119, 0.12);
+  --shadow: 0 4px 18px rgba(0, 102, 204, 0.12);
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -49,7 +49,7 @@ body {
   padding: 1.8rem 1rem 1.4rem;
   margin-bottom: 1.2rem;
   border-radius: var(--radius-lg);
-  box-shadow: 0 6px 24px rgba(0, 75, 90, 0.3);
+  box-shadow: 0 6px 24px rgba(0, 61, 153, 0.3);
   position: relative;
 }
 
@@ -64,7 +64,7 @@ body {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 0.6rem;
-  color: #ffdd57;
+  color: #ffffff;
 }
 
 .title {
@@ -239,7 +239,7 @@ body {
 
 .leaderboard-table td {
   padding: 0.7rem 0.85rem;
-  border-bottom: 1px solid #e8f4f6;
+  border-bottom: 1px solid #e6f2ff;
   color: var(--text);
   vertical-align: middle;
 }
@@ -290,7 +290,7 @@ body {
 }
 
 .leaderboard-table tbody tr:hover td {
-  background: #f0fafa;
+  background: #f5f9ff;
 }
 
 /* ── Progress Bars ────────────────────────── */
@@ -313,7 +313,7 @@ body {
 }
 
 .progress-bar {
-  background: #d9eef0;
+  background: #e6f2ff;
   border-radius: 50px;
   overflow: hidden;
   height: 11px;
@@ -357,7 +357,7 @@ body {
   padding: 0.2rem 0;
   font-size: 0.83rem;
   color: var(--muted);
-  border-bottom: 1px solid #f0f4f4;
+  border-bottom: 1px solid #f5f9ff;
 }
 
 .group-card ul li::before {
@@ -409,7 +409,7 @@ body {
   gap: 0.8rem;
   background: var(--card);
   box-shadow: var(--shadow-sm);
-  border: 1px solid #e8f4f6;
+  border: 1px solid #e6f2ff;
   border-left: 5px solid var(--primary);
   transition: box-shadow 0.18s ease;
 }
@@ -448,7 +448,7 @@ body {
 
 .task-divider {
   border: none;
-  border-top: 1px solid #e8f4f6;
+  border-top: 1px solid #e6f2ff;
   margin: 0.2rem 0;
 }
 
@@ -542,7 +542,7 @@ body {
   position: absolute;
   top: 0.8rem;
   right: 0.8rem;
-  background: #edf6f9;
+  background: #f5f9ff;
   border: none;
   color: var(--primary);
   font-size: 1rem;
@@ -580,7 +580,7 @@ body {
 }
 
 #group-search::placeholder {
-  color: #a0bbbf;
+  color: #7a9fb8;
 }
 
 #group-search:focus {

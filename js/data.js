@@ -48,7 +48,7 @@ const GROUPS = [
   },
   {
     id: 6,
-    name: "Group 6",
+    name: "KTU - Group 6",
     color: "#f77f00",
     members: ["Hafeez", "Shamil", "Shambu", "Anas"],
     completedTasks: [],
@@ -71,7 +71,7 @@ const GROUPS = [
 const TASKS = [
   {
     id: 1,
-    title: "Task 1 - Numpy Final Project",
+    title: "Task 1 - NumPy Final Project",
     dueDate: "2026-09-19"
   }
 
