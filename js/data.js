@@ -8,41 +8,41 @@
 const GROUPS = [
   {
     id: 1,
-    name: "Group 1",
+    name: "KTU - Group 1",
     color: "#ef476f",
-    members: ["Ahnaf", "Karthik", "Krishnaram", "Samad", "Nandhu", "Albyalu"],
-    completedTasks: [1],
+    members: ["Reema", "Suhaina", "Soudha", "Thasha"],
+    completedTasks: [],
     avatar: "1"
   },
   {
     id: 2,
-    name: "Group 2",
+    name: "KTU - Group 2",
     color: "#06d6a0",
-    members: ["Amos", "Akshay K", "Abhinav Krishna KV", "Abiprasad", "Nandhana", "Sanjay ps"],
-    completedTasks: [1, 2, 3, 4],
+    members: ["Rana Nasni", "Safa Salim", "Hanan Musthafa"],
+    completedTasks: [],
     avatar: "2"
   },
   {
     id: 3,
-    name: "Group 3",
+    name: "KTU - Group 3",
     color: "#ffd166",
-    members: ["Arathi", "Ananya", "Arsaina", "Aneeta"],
-    completedTasks: [1, 2],
+    members: ["Siyad", "Nooditha", "Abhitha", "Irfana"],
+    completedTasks: [],
     avatar: "3"
   },
   {
     id: 4,
-    name: "Group 4",
+    name: "KTU - Group 4",
     color: "#118ab2",
-    members: ["Reema Ruhana", "Soudha Bheegam", "Suhaima Najeeb", "Thasha Nafsa"],
-    completedTasks: [1, 2, 3, 4],
+    members: ["Faizal", "Sreelakshmi", "Adhi", "Vijay"],
+    completedTasks: [],
     avatar: "4"
   },
   {
     id: 5,
-    name: "Group 5",
+    name: "KTU - Group 5",
     color: "#9b5de5",
-    members: ["Sooraj", "Pranav", "Adithyan G", "Harikrishnan N R", "Siva", "Joshua"],
+    members: ["Ashwin", "Goutham", "Smeethen", "Adhnan haneefa"],
     completedTasks: [],
     avatar: "5"
   },
@@ -50,49 +50,17 @@ const GROUPS = [
     id: 6,
     name: "Group 6",
     color: "#f77f00",
-    members: ["Ambady", "Yazeen", "Sinan", "Vishnu", "Abhinav", "Adil T", "Ashfaq"],
+    members: ["Hafeez", "Shamil", "Shambu", "Anas"],
     completedTasks: [],
     avatar: "6"
   },
   {
     id: 7,
-    name: "Group 7",
+    name: "KTU - Group 7",
     color: "#4cc9f0",
-    members: ["Anujith Sabu", "Ajsal", "Joshua", "Rahul"],
+    members: ["Abhishek", "Albin", "Asif", "Rohit"],
     completedTasks: [],
     avatar: "7"
-  },
-  {
-    id: 8,
-    name: "Group 8",
-    color: "#e63946",
-    members: ["Rizan", "Kiran", "Shone", "Naveen"],
-    completedTasks: [],
-    avatar: "8"
-  },
-  {
-    id: 9,
-    name: "Group 9",
-    color: "#2dc653",
-    members: ["Alshan", "Sinan OP", "Safvan", "Sreesanth"],
-    completedTasks: [],
-    avatar: "9"
-  },
-  {
-    id: 10,
-    name: "Group 10",
-    color: "#c77dff",
-    members: ["Shana", "Shahma", "Nuzha"],
-    completedTasks: [],
-    avatar: "10"
-  },
-  {
-    id: 11,
-    name: "Group 11",
-    color: "#402c4fff",
-    members: ['Ben', 'Benet', 'Akash', 'Hari Krishnan', 'Suryajith', 'Sreenath'],
-    completedTasks: [1],
-    avatar: "11"
   }
 
 ];
@@ -103,23 +71,8 @@ const GROUPS = [
 const TASKS = [
   {
     id: 1,
-    title: "Task 1",
-    dueDate: "2026-09-07"
-  },
-  {
-    id: 2,
-    title: "Task 2",
-    dueDate: "2026-09-08"
-  },
-  {
-    id: 3,
-    title: "Task 3",
-    dueDate: "2026-09-09"
-  },
-  {
-    id: 4,
-    title: "Task 4",
-    dueDate: "2026-09-10"
+    title: "Task 1 - Numpy Final Project",
+    dueDate: "2026-09-19"
   }
 
 ];
