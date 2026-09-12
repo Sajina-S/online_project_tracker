@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Prevent Aggressive Mobile Browser Caching -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <title>Group Task Race</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="title">GROUP TASK RACE</h1>
+    <p class="subtitle">Track. Compete. Complete.</p>
+    <nav class="nav">
+      <button class="nav-btn active" data-section="dashboard">Dashboard</button>
+      <button class="nav-btn" data-section="groups">Groups</button>
+      <button class="nav-btn" data-section="tasks">Tasks</button>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="section">
+      <div class="summary-cards" id="summary-cards"></div>
+      <div class="leaderboard" id="leaderboard"></div>
+      <div class="progress-bars" id="progress-bars"></div>
+    </section>
+
+    <!-- Groups Section -->
+    <section id="groups" class="section hidden">
+      <div class="search-box">
+        <input type="text" id="group-search" placeholder="Search Groups..." />
+      </div>
+      <div class="group-cards" id="group-cards"></div>
+    </section>
+
+    <!-- Tasks Section -->
+    <section id="tasks" class="section hidden">
+      <div class="task-list" id="task-list"></div>
+    </section>
+  </main>
+
+  <!-- Modal for Group Details -->
+  <div id="modal-overlay" class="modal-overlay hidden">
+    <div class="modal" id="group-modal">
+      <button class="modal-close" id="modal-close">✖</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Dynamic Anti-Cache Script Loader -->
+  <script>
+    (function () {
+      // Generate a unique timestamp query parameter on every page load
+      const timestamp = new Date().getTime();
+
+      // Dynamically load CSS with anti-cache query param
+      const links = document.querySelectorAll('link[rel="stylesheet"]');
+      links.forEach(link => {
+        if (link.href && link.href.includes('css/style.css')) {
+          link.href = link.href.split('?')[0] + '?v=' + timestamp;
+        }
+      });
+
+      function loadScript(src, callback) {
+        const script = document.createElement('script');
+        script.src = src + '?v=' + timestamp;
+        script.onload = callback;
+        document.body.appendChild(script);
+      }
+
+      // Load data.js first (fresh each time), then load performer.js and app.js
+      loadScript('js/data.js', function () {
+        loadScript('js/performer.js', function () {
+          loadScript('js/app.js', function () {
+            if (typeof init === 'function') {
+              init();
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>
